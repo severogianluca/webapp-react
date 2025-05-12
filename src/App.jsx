@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DefaultLayout from '../layout/DeafaultLayout'
 
 import './App.css'
 
@@ -9,11 +11,10 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path="/" element={<DefaultLayout />}>
-            <Route index element={<HomePage />} />
-            <Route path="/chiSiamo" element={<ChiSiamo />} />
-            <Route path="/" element={< />} />
-            <Route path="//:id" element={< />} />
+          <Route  element={<DefaultLayout/>}>
+            <Route path="/" element={<div>sono del main</div>} />
+            
+            <Route path="/:id" element={<div>sono nella scheda</div>} />
           </Route>
 
         </Routes>
@@ -23,3 +24,4 @@ function App() {
 }
 
 export default App
+
