@@ -45,6 +45,18 @@ function DetailsMovies() {
                     </div> : <div>Caricamento</div>}
             </div>
 
+            <div>
+                {movie && movie.reviews ?
+                    movie.reviews.map(element => (
+                        <div class="card ">
+                            <div class="card-body">
+                                <h5 class="card-title">{element.name}</h5>
+                                <p class="card-text">{element.text}</p>
+                                <p class="card-text">{element.vote}</p>
+                            </div>
+                        </div>
+                    )) : <div>Caricamento</div>}
+            </div>
         </>
     )
 }
