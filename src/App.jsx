@@ -3,6 +3,7 @@ import DefaultLayout from '../layout/DeafaultLayout'
 
 import './App.css'
 import HomeListMovies from "../pages/HomeListMovies";
+import DetailsMovies from "../pages/DetailsMovies";
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
           <Route  element={<DefaultLayout/>}>
             <Route path="/" element={<HomeListMovies/>} />
             
-            <Route path="/:id" element={<div>sono nella scheda</div>} />
+            <Route path="/:id" element={<DetailsMovies/>} />
           </Route>
 
         </Routes>

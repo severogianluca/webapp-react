@@ -13,7 +13,7 @@ function HomeListMovies() {
             .catch((err) => console.error(err));
 
     }
-    console.log(movies)
+
     useEffect(getList, [])
     return (
         <>

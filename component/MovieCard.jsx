@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function MovieCard({ movie }) {
-    const { id, title, director, genre, release_year, abstract, media_voti, imagePath } = movie;
+    const { id, title, director, genre, release_year, abstract, average_vote, imagePath } = movie;
 
     return (
         <>
@@ -13,7 +13,7 @@ function MovieCard({ movie }) {
                         <p class="card-text">{genre}</p>
                         <p class="card-text">{release_year}</p>
                         <p class="card-text">{abstract}</p>
-                        <p class="card-text">{media_voti}</p>
+                        <p class="card-text">{average_vote}</p>
 
                         <Link to={`/${id}`} class="btn btn-primary">Dettagli film</Link>
                     </div>
