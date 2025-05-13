@@ -5,17 +5,17 @@ function MovieCard({ movie }) {
 
     return (
         <>
-            <div class="card" style={{width: "18rem"}}>
+            <div className="card" style={{width: "18rem"}}>
                 <img src={imagePath} className="card-img-top w-50 mx-auto" alt={title}/>
-                    <div class="card-body">
-                        <h5 class="card-title">{title}</h5>
-                        <p class="card-text">{director}</p>
-                        <p class="card-text">{genre}</p>
-                        <p class="card-text">{release_year}</p>
-                        <p class="card-text">{abstract}</p>
-                        <p class="card-text">{average_vote}</p>
+                    <div className="card-body">
+                        <h5 className="card-title">{title}</h5>
+                        <p className="card-text small">{director}</p>
+                        <p className="card-text small">{genre}</p>
+                        <p className="card-text small">{release_year}</p>
+                        <p className="card-text small">{abstract}</p>
+                        <p className="card-text small"><strong>Media voto: {average_vote}</strong></p>
 
-                        <Link to={`/${id}`} class="btn btn-primary">Dettagli film</Link>
+                        <Link to={`/${id}`} className="btn btn-primary w-100">Dettagli film</Link>
                     </div>
             </div>
         </>
