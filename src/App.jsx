@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DefaultLayout from '../layout/DeafaultLayout'
 
 import './App.css'
+import HomeListMovies from "../pages/HomeListMovies";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
         <Routes>
 
           <Route  element={<DefaultLayout/>}>
-            <Route path="/" element={<div>sono del main</div>} />
+            <Route path="/" element={<HomeListMovies/>} />
             
             <Route path="/:id" element={<div>sono nella scheda</div>} />
           </Route>
