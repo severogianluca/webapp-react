@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import FormReviews from "../component/FormReviews";
 
 
 function DetailsMovies() {
@@ -58,6 +59,10 @@ function DetailsMovies() {
                             </div>
                         )) : <div>Caricamento</div>}
                 </div>
+            </div>
+
+            <div>
+                <FormReviews id={id} reload={getMovie}/>
             </div>
 
         </>
