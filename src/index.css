@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
 }
 
+.gradient-btn {
+    background: radial-gradient(circle, #170d4e 0%, #000000 100%);
+    color:white;
+}
+
 
 
 .navbar ul {
@@ -28,4 +33,12 @@
 
 h1{
   padding: 30px 0px;
+}
+
+nav{
+    z-index:1; /* Assicurati che la navbar sia sopra il resto del contenuto */
+}
+
+.pad-top{
+    padding-top: 80px;
 }

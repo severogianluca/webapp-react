@@ -19,7 +19,7 @@ function HomeListMovies() {
         <>
             <div className="gradient-bg">
                 <div className="container ">
-                    <h1 className="text-white">Lista dei film</h1>
+                    <h1 className="text-white pt-5">Lista dei film</h1>
                     <h2 className="text-white">Titoli</h2>
                     <div className="row">
                         {movies.map((movie) => (
