@@ -1,7 +1,11 @@
+import NavBar from "./NavBar"
+
 function Header(){
     return(
         <>
-        <div className="bg-primary">Moovies</div>
+        <div className="bg-primary">
+            <NavBar/>
+        </div>
         </>
     )
 }
