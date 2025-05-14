@@ -34,7 +34,7 @@ function FormReviews({id, reload}) {
 
     return (
         <>
-            <div className="border rounded p-4 shadow-sm container pt-5">
+            <div className="border rounded p-4 shadow-sm container mt-5 ">
                 
                 
 
@@ -79,8 +79,10 @@ function FormReviews({id, reload}) {
                             rows="2"
                         ></input>
                     </div>
-
-                    <button type="submit" className="btn btn-primary w-25">Invia</button>
+                    <div className="text-center">
+                        <button type="submit" className="btn btn-primary w-25 ">Invia</button>
+                    </div>
+                    
                 </form>
             </div>
         </>
