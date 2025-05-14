@@ -36,9 +36,11 @@ h1{
 }
 
 nav{
-    z-index:1; /* Assicurati che la navbar sia sopra il resto del contenuto */
+    z-index:1;
 }
 
 .pad-top{
     padding-top: 65px;
 }
+
+

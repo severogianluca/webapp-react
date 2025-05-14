@@ -59,11 +59,15 @@ function DetailsMovies() {
                             </div>
                         )) : <div>Caricamento</div>}
                 </div>
-            </div>
 
             <div>
                 <FormReviews id={id} reload={getMovie}/>
             </div>
+            
+            </div>
+
+
+
 
         </>
     )

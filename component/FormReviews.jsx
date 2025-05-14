@@ -34,13 +34,14 @@ function FormReviews({id, reload}) {
 
     return (
         <>
-            <div
-                className="border rounded p-4 shadow-sm bg-light"
-                style={{ width: "500px", height: "450px", overflowY: "auto" }}
-            >
+            <div className="border rounded p-4 shadow-sm container pt-5">
+                
+                
+
                 <form onSubmit={sendForm}>
                     <div className="mb-3">
-                        <label htmlFor="name" className="form-label">Nome</label>
+                        <h5 className="text-white">Ricordati che la tua opinione conta!</h5>
+                        <label htmlFor="name" className="form-label text-white">Nome</label>
                         <input
                             type="text"
                             className="form-control"
@@ -53,8 +54,8 @@ function FormReviews({id, reload}) {
                     </div>
 
                     <div className="mb-3">
-                        <label htmlFor="text" className="form-label">Inserisci una recensione</label>
-                        <input
+                        <label htmlFor="text" className="form-label text-white">Inserisci una recensione</label>
+                        <textarea
                             type="text"
                             className="form-control"
                             id="text"
@@ -62,12 +63,13 @@ function FormReviews({id, reload}) {
                             value={formData.text}
                             placeholder="Inserisci la tua recensione"
                             onChange={handleFormData}
+                            
                         />
                     </div>
 
                     <div className="mb-3">
-                        <label htmlFor="vote" className="form-label">Lascia un voto</label>
-                        <textarea
+                        <label htmlFor="vote" className="form-label text-white">Lascia un voto</label>
+                        <input
                             className="form-control"
                             id="vote"
                             name="vote"
@@ -75,10 +77,10 @@ function FormReviews({id, reload}) {
                             placeholder="Lascia un voto"
                             onChange={handleFormData}
                             rows="2"
-                        ></textarea>
+                        ></input>
                     </div>
 
-                    <button type="submit" className="btn btn-primary w-100">Invia</button>
+                    <button type="submit" className="btn btn-primary w-25">Invia</button>
                 </form>
             </div>
         </>
