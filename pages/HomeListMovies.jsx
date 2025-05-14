@@ -17,17 +17,20 @@ function HomeListMovies() {
     useEffect(getList, [])
     return (
         <>
-            <div className="container">
-                <h1>Lista dei film</h1>
-                <h2>Titoli</h2>
-                <div className="row">
-                    {movies.map((movie) => (
-                        <div className="col-md-4 mb-4" key={movie.id}>
-                            <MovieCard movie={movie} />
-                        </div>
-                    ))}
+            <div className="gradient-bg">
+                <div className="container ">
+                    <h1 className="text-white">Lista dei film</h1>
+                    <h2 className="text-white">Titoli</h2>
+                    <div className="row">
+                        {movies.map((movie) => (
+                            <div className="col-md-4 mb-4" key={movie.id}>
+                                <MovieCard movie={movie} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
+
         </>
 
     )

@@ -5,8 +5,8 @@ function MovieCard({ movie }) {
 
     return (
         <>
-            <div className="card" style={{width: "18rem"}}>
-                <img src={imagePath} className="card-img-top w-50 mx-auto" alt={title}/>
+            <div className="card " style={{width: "18rem"}}>
+                <img src={imagePath} className="card-img-top w-50 mx-auto mt-3" alt={title}/>
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <p className="card-text small">{director}</p>
