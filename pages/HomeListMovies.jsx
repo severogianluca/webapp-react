@@ -29,7 +29,11 @@ function HomeListMovies() {
         <>
             <div className="gradient-bg">
                 <div className="container ">
-                    <h1 className="text-white pt-5">Lista dei film</h1>
+                    <div className="d-flex justify-content-between align-items-center">
+                        <h1 className="text-white pt-5">Lista dei film</h1>
+                        <button type="button" className="btn gradient-add-btn mt-4">Add film</button>
+                    </div>
+
                     <h2 className="text-white">Titoli</h2>
                     <div className="row">
                         {movies.map((movie) => (

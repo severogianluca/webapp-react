@@ -10,6 +10,17 @@
     color:white;
 }
 
+.gradient-nav {
+    background: radial-gradient(circle, #351ace 0%, #000000 100%);
+    color:white;
+}
+
+.gradient-add-btn {
+    background: radial-gradient(circle, #806bf7 0%, #261468 100%);
+    color:white;
+}
+
+
 
 
 .navbar ul {
