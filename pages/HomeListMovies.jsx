@@ -1,20 +1,30 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import MovieCard from "../component/MovieCard";
+import GlobalContext from "../context/globalContext";
+import { useContext } from "react";
 
 function HomeListMovies() {
 
     const [movies, setMoovies] = useState([])
+    const { setIsLoading } = useContext(GlobalContext)
+
+
+
 
     function getList() {
+
+        setIsLoading(true)
         axios
             .get("http://localhost:4000/movies")
             .then((response) => setMoovies(response.data))
-            .catch((err) => console.error(err));
+            .catch((err) => console.error(err))
+            .finally(() => setIsLoading(false))
 
     }
 
-    useEffect(getList, [])
+    useEffect(getList, [setIsLoading])
+
     return (
         <>
             <div className="gradient-bg">
