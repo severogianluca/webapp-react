@@ -14,7 +14,6 @@ function FormReviews({id, reload}) {
         const value = e.target.value;
     
     setFormData((formData) => ({
-        // value conterra il valore o del checkbox o del form
         ...formData, [e.target.name]: value
     }))};
 

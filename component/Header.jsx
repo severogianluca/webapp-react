@@ -5,6 +5,7 @@ function Header(){
         <>
         <div className="bg-primary">
             <NavBar/>
+            <div style={{ height: "40px" }}></div> 
         </div>
         </>
     )

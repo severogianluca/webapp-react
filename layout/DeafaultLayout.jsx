@@ -12,7 +12,7 @@ function DefaultLayout(){
     return(
         <>
         <Header/>
-        <main>
+        <main className="margin-b">
             {isLoading && <Loader/>}
             <Outlet/>
             

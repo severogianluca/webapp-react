@@ -15,7 +15,7 @@ function MovieCard({ movie }) {
                         <p className="card-text small">{abstract}</p>
                         <p className="card-text small"><strong>Media voto: {average_vote}</strong></p>
 
-                        <Link to={`/${id}`} className="btn gradient-btn w-100">Dettagli film</Link>
+                        <Link to={`/${id}`} className="btn gradient-add-btn w-100">Dettagli film</Link>
                     </div>
             </div>
         </>

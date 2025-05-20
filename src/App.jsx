@@ -6,6 +6,7 @@ import DetailsMovies from "../pages/DetailsMovies";
 import ChiSiamo from "../pages/ChiSiamo";
 import GlobalContext from "../context/globalContext";
 import { useState } from "react";
+import FormNewMovie from "../component/FormNewMovie";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" element={<HomeListMovies />} />
               <Route path="/ChiSiamo" element={<ChiSiamo />} />
               <Route path="/:id" element={<DetailsMovies />} />
+              <Route path="/addNewMovie" element={<FormNewMovie/>}/>
             </Route>
 
           </Routes>

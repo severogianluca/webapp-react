@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
 .gradient-bg {
     min-height: 100vh;
     background: radial-gradient(circle, #170d4e 0%, #000000 100%);
@@ -20,6 +26,11 @@
     color:white;
 }
 
+.gradient-add-form {
+    background: radial-gradient(circle, #25bdbd 0%, #261468 100%);
+    color:white;
+}
+
 
 
 
@@ -35,6 +46,7 @@
   color: white; 
   text-decoration: none;
   font-weight: bold;
+  overflow-x: hidden;
 
 }
 
@@ -51,8 +63,12 @@ nav{
 }
 
 .pad-top{
-    padding-top: 65px;
+    padding-top: 15px;
 }
+
+/* .margin-b{
+  margin-bottom: 100px;
+} */
 
 
 .loader-color{

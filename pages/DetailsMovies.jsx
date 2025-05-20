@@ -37,7 +37,7 @@ function DetailsMovies() {
                                             <p className="card-text">Genere: {movie.genre}</p>
                                             <p className="card-text">Anno: {movie.release_year}</p>
                                             <p className="card-text">Descrizione: {movie.abstract}</p>
-                                            <Link to={'/'} className="btn gradient-btn mt-3">Indietro</Link>
+                                            <Link to={'/'} className="btn gradient-add-btn mt-3">Indietro</Link>
                                         </div>
 
                                         <p className="card-text">Media voto: {movie.average_vote}</p>
